@@ -1,0 +1,26 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Mocha Spec Runner</title>
+    <link rel="stylesheet" href="lib/mocha/mocha.css">
+    <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+<body>
+    <div id="mocha"></div>
+    <script src="lib/mocha/mocha.js"></script>
+    <script>mocha.setup({ui:'bdd', ignoreLeaks:true, bail:false})</script>
+    <!-- assertion framework -->
+    <script src="lib/chai.js"></script>
+    <script src="lib/sinon-chai.js"></script>
+    <script src="lib/sinon.js"></script>
+    <script>var should = chai.should();
+            var expect = chai.expect;
+    </script>
+
+    <!-- include source files here... -->
+
+    <!-- include spec files here... -->
+    <script data-main="mocha-test-main" src="bower_components/requirejs/require.js"></script>
+</body>
+</html>
